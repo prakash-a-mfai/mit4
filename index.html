@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.con{
+    text-align: center;
+    margin-top:50px;
+}
+button{
+    margin-top: 10px;
+    padding: 5px 20px;
+    color: white;
+    background-color: blue;
+}
+</style>
+<body>
+<div class="con">
+    <label for="name">name</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="email">email</label><br>
+    <input type="text" id="email"><br>
+    <button onclick="display()" type="button"> submit</button>
+</div>
+
+
+    <script>
+        var name=document.getElementById("name").value;
+        var mail=document.getElementById("email").value;
+        function display(){
+            let arr;
+
+           localStorage.setItem("name"=name);
+           localStorage.setItem("mail"=email);
+            arr=[
+                name,
+                mail,
+
+            ]
+            console.log(arr);
+            var ans=document.createElement('div');
+            ans.append('arr');
+
+        }
+
+
+
+    </script>
+</body>
+</html>
